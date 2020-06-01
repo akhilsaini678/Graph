@@ -3,8 +3,8 @@ using namespace std;
 #define ll            long long int
 #define infinite      1e18+1
 
-//Shortest Path
-void shortest_path(vector<ll> v[],ll start)
+//Shortest Distance
+void shortest_distance(vector<ll> v[],ll start)
 {
     bool visited[100]={false};
     vector<ll> distance(100,infinite);   
@@ -46,6 +46,6 @@ int main()
         v[x].push_back(y);
         v[y].push_back(x);
     }
-    shortest_path(v,start);
+    shortest_distance(v,start);
     return 0;
 }
