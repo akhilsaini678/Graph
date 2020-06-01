@@ -27,7 +27,7 @@ int main()
     {
         cin>>x>>y;
         v[x].push_back(y);
-        //v[y].push_back(x);
+        v[y].push_back(x);
     }
     for(ll i=1;i<=nodes;i++)
     {
